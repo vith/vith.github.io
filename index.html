@@ -1,74 +1,155 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Jason Papakostas - Portfolio</title>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link href='http://fonts.googleapis.com/css?family=Roboto:500,400,700,300,100' rel='stylesheet' type='text/css'>
+<style>
+body {
+  background-color: #eed;
+}
+body,h1,h2,h3,h4,h5,h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  margin: 0;
+}
+.header_wrap {
+  background: #d6d6c6;
+  margin: 0;
+  padding-bottom: 10px;
+}
+header {
+  width: 650px;
+  margin: 0 auto;
+}
+header h1 {
+  padding: 20px 20px 10px 40px;
+}
+.navbar {
+  width: 650px;
+  margin: 0 auto;
+}
+.navbar li:hover {
+  background-color: #333;
+}
+.navbar .nav > li > a {
+  color: #333;
+}
+.navbar .nav > li > a:hover {
+  color: #eee;
+  text-shadow: 0px 1px 0px #333;
+}
+footer {
+  min-height: 100px;
+  background: #d6d6c6;
+}
+.main_content {
+  width: 650px;
+  margin: 0 auto;
+  padding: 20px 0 20px 0;
+  /*background: #ee0;*/
+}
+.portfolio-item {
+  clear: both;
+  height: 150px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+.portfolio-item img {
+  float: left;
+  margin: 0px;
+  margin-right: 20px;
+  width: 200px;
+  height: 150px;
+  box-shadow: 0 8px 10px -6px #000;
+}
+</style>
+<!--[if IE]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Vith.github.io : " />
+<div class="header_wrap">
+  <header>
+    <h1>Jason Papakostas</h1>
+    <nav class="navbar">
+      <div class="navbar-inner">
+        <ul class="nav">
+          <li><a href=".">Programming Portfolio</a></li>
+          <li><a href="https://docs.google.com/file/d/0B48N8eHwHK4KNjdRNWhUNU5JOXM/view">Resume</a></li>
+          <li><a href="https://github.com/vith">GitHub page</a></li>
+          <li><a href="https://userscripts.org/users/38506/scripts">Userscripts.org profile</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+</div>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+<article class="main_content">
 
-    <title>Vith.github.io</title>
-  </head>
+  <h2>Programming Portfolio</h2>
 
-  <body>
+  <section class="portfolio-item">
+    <a href="https://github.com/vith/imgurdl">
+      <img src="imgurdl.png" alt="imgurdl screenshot">
+    </a>
+    <h3><a href="https://github.com/vith/imgurdl">imgurdl</a></h3>
+    <p>Go command line tool for batch downloading albums or single images from imgur.com</p>
+  </section>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/vith">View on GitHub</a>
+  <section class="portfolio-item">
+    <a href="http://cblegalgroup.com">
+      <img src="cblegalgroup.png" alt="cblegalgroup.com screenshot">
+    </a>
+    <h3><a href="http://cblegalgroup.com">cblegalgroup.com</a></h3>
+    <p>Website for a law firm</p>
+  </section>
 
-          <h1 id="project_title">Vith.github.io</h1>
-          <h2 id="project_tagline"></h2>
+  <section class="portfolio-item">
+    <a href="https://github.com/vith/vithKF">
+      <img src="vithKF.png" alt="vithKF screenshot">
+    </a>
+    <h3><a href="https://github.com/vith/vithKF">vithKF</a></h3>
+    <p>Tweaks for the game Killing Floor. Borderless fullscreen windowed mode, custom crosshair, and windowed mode gamma correction.</p>
+  </section>
 
-        </header>
-    </div>
+  <section class="portfolio-item">
+    <a href="https://docs.google.com/spreadsheet/ccc?key=0Ao8N8eHwHK4KdENDZmVxbWZURlU2bG0tZTZtSnhuWVE">
+      <img src="d3-jc.png" alt="Diablo III Jewelcrafting Spreadsheet screenshot">
+    </a>
+    <h3><a href="https://docs.google.com/spreadsheet/ccc?key=0Ao8N8eHwHK4KdENDZmVxbWZURlU2bG0tZTZtSnhuWVE">Diablo III Jewelcrafting Spreadsheet</a></h3>
+    <p>Spreadsheet for calculating the profitability of any jewelcrafting operation in Diablo III</p>
+  </section>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+  <section class="portfolio-item">
+    <a href="https://github.com/vith/GuildActivityRewardSystem">
+      <img src="gars.png" alt="GuildActivityRewardSystem screenshot">
+    </a>
+    <h3><a href="https://github.com/vith/GuildActivityRewardSystem">GuildActivityRewardSystem</a></h3>
+    <p>World of Warcraft addon to track and reward guild members for earning guild XP</p>
+  </section>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+  <section class="portfolio-item">
+    <a href="https://userscripts.org/scripts/show/43943">
+      <img src="qlasf.jpg" alt="Quake Live Advanced Server Filter screenshot">
+    </a>
+    <h3><a href="https://userscripts.org/scripts/show/43943">Quake Live Advanced Server Filter</a></h3>
+    <p>Greasemonkey script for <a href="http://quakelive.com">quakelive.com</a>: blacklist undesired servers; fade out empty ones.</p>
+  </section>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+  <section class="portfolio-item">
+    <a href="https://github.com/vith/d3-gear-swap">
+      <img src="d3-gear-swap.png" alt="d3-gear-swap screenshot">
+    </a>
+    <h3><a href="https://github.com/vith/d3-gear-swap">d3-gear-swap</a></h3>
+    <p>Python script for <a href="http://www.sikuli.org">Sikuli</a> to swap between Diablo III gear sets with a single keypress. Supports multiple screen resolutions.</p>
+  </section>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+</article>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<footer></footer>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <!-- <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p> -->
-      </footer>
-    </div>
-
-    
-
-  </body>
+</body>
 </html>
